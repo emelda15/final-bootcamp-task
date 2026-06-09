@@ -195,11 +195,84 @@ input[type="email"]:focus {
 
 
 @media (max-width: 768px) {
-  body { padding: 0; background-color: var(--color-white); align-items: flex-start; }
-  .card { grid-template-columns: 1fr; padding: 0; border-radius: 0; box-shadow: none; }
-  .illustration { border-radius: 0 0 24px 24px; height: 250px; }
-  .card-content { padding: 24px; }
-  h1, .success-card h2 { font-size: 2.5rem; }
-  .success-card { min-height: 100vh; border-radius: 0; padding: 100px 24px 40px 24px; box-shadow: none; }
-  .attribution { display: none; } /* Hide attribution on mobile layout to clean up spacing */
+  body { 
+    padding: 0; 
+    background-color: var(--color-white); 
+    align-items: flex-start; 
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .card { 
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto;
+    padding: 0; 
+    border-radius: 0; 
+    box-shadow: none; 
+    gap: 40px;
+    width: 100%;
+  }
+
+  .card-image {
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  
+  .illustration { 
+    border-radius: 0 0 24px 24px; 
+    height: auto;
+    max-height: 380px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+
+  .card-content { 
+    grid-row: 2;
+    padding: 0 24px 40px 24px; 
+  }
+
+  h1 { 
+    font-size: 2.6rem; 
+    margin-bottom: 16px;
+  }
+
+  .description {
+    margin-bottom: 24px;
+  }
+
+  .features-list {
+    margin-bottom: 32px;
+  }
+
+
+  .success-card { 
+    min-height: 100vh; 
+    border-radius: 0; 
+    padding: 140px 24px 40px 24px; 
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .success-card h2 {
+    font-size: 2.6rem;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    line-height: 1.1;
+  }
+
+  .success-card p {
+    margin-bottom: auto; 
+    padding-bottom: 40px;
+  }
+
+  .attribution { 
+    display: none;
+  } 
 }
