@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Mentor | Newsletter Sign-Up Form</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Newsletter Sign-Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <main class="container">
-    <section class="card" id="signUpCard">
-      <div class="card-content">
-        <h1>Stay updated!</h1>
-        <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
-        
-        <ul class="features-list">
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
-        </ul>
+    <main class="container">
+        <section class="card" id="signUpCard">
+            <div class="card-content">
+                <h1>Stay updated!</h1>
+                <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
 
-        <form id="newsletterForm" novalidate>
-          <div class="input-header">
-            <label for="email">Email address</label>
-            <span class="error-message" id="errorMsg">Valid email required</span>
-          </div>
-          <input 
-            type="email" 
-            id="email" 
-            placeholder="email@company.com" 
-            autocomplete="off"
-          >
-          <button type="submit" class="btn">Subscribe to monthly newsletter</button>
-        </form>
-      </div>
+                <ul class="features-list">
+                    <li>Product discovery and building what matters</li>
+                    <li>Measuring to ensure updates are a success</li>
+                    <li>And much more!</li>
+                </ul>
 
-      <div class="card-image">
-        <picture>
-          <source media="(max-width: 768px)" srcset="mobile-design.jpg">
-          <img src="desktop-design.jpg" alt="Newsletter Illustration" class="illustration">
-        </picture>
-      </div>
-    </section>
+                <form id="newsletterForm" novalidate>
+                    <div class="input-header">
+                        <label for="email">Email address</label>
+                        <span class="error-message" id="errorMsg">Valid email required</span>
+                    </div>
+                    <input type="email" id="email" placeholder="email@company.com" autocomplete="off">
+                    <button type="submit" class="btn">Subscribe to monthly newsletter</button>
+                </form>
+            </div>
 
-    <section class="success-card hidden" id="successCard">
-      <div class="success-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-          <circle cx="32" cy="32" r="32" fill="hsl(4, 100%, 67%)"/>
-          <path fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M20 32l8 8 16-16"/>
-        </svg>
-      </div>
-      <h2>Thanks for subscribing!</h2>
-      <p>A confirmation email has been sent to <strong id="userEmail">ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
-      <button class="btn" id="dismissBtn">Dismiss message</button>
-    </section>
-  </main>
+            <div class="card-image">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="illustration-sign-up-mobile.svg">
+                    <img src="illustration-sign-up-desktop.svg" alt="Newsletter Illustration" class="illustration">
+                </picture>
+            </div>
+        </section>
 
-  <script src="script.js"></script>
+        <section class="success-card hidden" id="successCard">
+            <div class="success-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+                    <circle cx="32" cy="32" r="32" fill="hsl(4, 100%, 67%)" />
+                    <path fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                        d="M20 32l8 8 16-16" />
+                </svg>
+            </div>
+            <h2>Thanks for subscribing!</h2>
+            <p>A confirmation email has been sent to <strong id="userEmail">ash@loremcompany.com</strong>. Please open
+                it and click the button inside to confirm your subscription.</p>
+            <button class="btn" id="dismissBtn">Dismiss message</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
